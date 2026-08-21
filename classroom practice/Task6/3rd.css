@@ -1,0 +1,36 @@
+.menu {
+    width: 350px;
+    margin-left: 100px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.heading {
+    height: 100px;
+    background-color: #55c8d0;
+    color: #777;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.menu a {
+    display: block;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 50px;
+    border-bottom: 1px solid #aaa;
+    background-color: #fff;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    background-color: #13f21a;
+}
