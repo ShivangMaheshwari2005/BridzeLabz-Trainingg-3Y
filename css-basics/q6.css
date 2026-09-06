@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 5%; font-family: Arial, sans-serif; background: #111827; color: white; }
+h1 { text-align: center; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+figure { margin: 0; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,.4); }
+figure img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; transition: transform .3s; }
+figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 1rem; background: rgba(0,0,0,.7); opacity: 0; transition: opacity .3s; text-align: center; }
+figure:hover img { transform: scale(1.1); }
+figure:hover figcaption { opacity: 1; }
+@media (max-width: 800px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .gallery { grid-template-columns: 1fr; } }

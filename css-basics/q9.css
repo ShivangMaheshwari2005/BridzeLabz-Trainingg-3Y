@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 3rem 6%; background: #e5e7eb; font-family: Georgia, serif; color: #202124; }
+main { max-width: 1200px; margin: auto; background: #fff; padding: 2rem; }
+h1 { column-span: all; text-align: center; font-family: Arial, sans-serif; font-size: 3rem; border-bottom: 3px solid #202124; padding-bottom: 1rem; margin-top: 0; }
+.article { column-count: 3; column-gap: 2.5rem; text-align: justify; font-size: 1.05rem; line-height: 1.7; }
+.article img { float: left; width: 45%; margin: 0 1rem .7rem 0; }
+@media (max-width: 800px) { .article { column-count: 2; } }
+@media (max-width: 550px) { .article { column-count: 1; } }

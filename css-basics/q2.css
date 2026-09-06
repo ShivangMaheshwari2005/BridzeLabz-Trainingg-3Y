@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; background: #f4f1ea; color: #222; }
+header { text-align: center; padding: 2rem; background: #402218; color: white; }
+nav { padding: 1rem; text-align: center; background: #704214; }
+nav a { color: white; margin: 0 1.5rem; text-decoration: none; font-weight: bold; }
+section { min-height: 70vh; padding: 10vh 8%; margin: 0; border-bottom: 4px solid #402218; }
+section h2 { font-size: 2.5rem; font-weight: 700; }
+section p { max-width: 700px; font-size: 1.2rem; line-height: 1.8; }
+.parallax { background-size: cover; background-position: center; background-attachment: fixed; color: white; }
+.history { background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('https://picsum.photos/1600/900?random=21'); }
+.places { background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('https://picsum.photos/1600/900?random=22'); }
+.gradient { background: radial-gradient(circle at top left, #fff3b0, #f2a65a 45%, #b85c38); }
+footer { text-align: center; padding: 1.5rem; background: #402218; color: white; }

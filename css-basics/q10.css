@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #172033; background: #f8fafc; }
+header { position: sticky; top: 0; z-index: 10; padding: 1rem 5%; background: rgba(15,23,42,.95); color: white; display: flex; justify-content: space-between; align-items: center; outline: 2px solid rgba(255,255,255,.15); }
+header nav a { color: white; text-decoration: none; margin-left: 1.2rem; }
+.hero { position: relative; min-height: 80vh; background: linear-gradient(rgba(15,23,42,.65), rgba(15,23,42,.65)), url('https://picsum.photos/1600/900?random=61') center/cover; display: flex; justify-content: center; align-items: center; text-align: center; color: white; }
+.hero-content { position: relative; padding: 3rem; border: 2px solid rgba(255,255,255,.7); }
+.hero h2 { font-size: 3rem; margin: 0; }
+.about { display: flex; gap: 5%; align-items: center; padding: 6rem 8%; border-bottom: 1px solid #cbd5e1; }
+.about > div, .about img { width: 47%; }
+.about img { border-radius: 15px; border: 5px solid white; box-shadow: 0 10px 25px rgba(0,0,0,.2); }
+.services { position: relative; padding: 6rem 8%; background: radial-gradient(circle at center, #e0f2fe, #bfdbfe); }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.service-grid article { padding: 2rem; background: rgba(255,255,255,.8); border: 2px solid #93c5fd; border-radius: 12px; }
+.contact { padding: 6rem 8%; background: #e2e8f0; }
+.contact form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
+.contact input, .contact textarea { padding: 1rem; border: 2px solid #94a3b8; border-radius: 8px; font: inherit; }
+.contact button { padding: 1rem; border: 0; border-radius: 8px; background: #2563eb; color: white; font-weight: bold; }
+footer { padding: 2rem; text-align: center; background: #0f172a; color: white; }
+@media (max-width: 700px) {
+    header { flex-direction: column; gap: .7rem; }
+    .about { flex-direction: column; }
+    .about > div, .about img { width: 100%; }
+    .service-grid { grid-template-columns: 1fr; }
+}
