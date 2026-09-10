@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main */
+        main {
+            flex: 1;
+            padding: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .box {
+            width: 250px;
+            height: 180px;
+
+            background-color: #eeeeee;
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 22px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: rotate(2deg);
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 750px) {
+            main {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <main>
+        <div class="box">Services</div>
+        <div class="box">Projects</div>
+        <div class="box">Contact</div>
+    </main>
+
+    <footer>
+        © 2026 My Website
+    </footer>
+
+</body>
+</html>

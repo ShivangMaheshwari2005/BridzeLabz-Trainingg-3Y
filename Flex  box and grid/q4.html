@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard {
+            display: grid;
+
+            /* Header + Sidebar + Main */
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr;
+
+            gap: 15px;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        /* Header spans all columns */
+        header {
+            grid-column: 1 / -1;
+
+            background-color: #222;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        aside h2 {
+            margin-bottom: 25px;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 0;
+        }
+
+        /* Main */
+        main {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* One box spans two columns */
+        .large-box {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 700px) {
+
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+            }
+
+            header {
+                grid-column: 1;
+            }
+
+            aside {
+                text-align: center;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .large-box {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header>
+            <h1>My Dashboard</h1>
+        </header>
+
+        <aside>
+            <h2>Menu</h2>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Projects</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main>
+
+            <div class="box large-box">
+                <h2>Overview</h2>
+            </div>
+
+            <div class="box">
+                <h2>Statistics</h2>
+            </div>
+
+            <div class="box">
+                <h2>Projects</h2>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
