@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+/* =========================================
+   ATTRIBUTE SELECTORS
+   ========================================= */
+
+/* [type="text"]
+   Selects input elements whose type is text */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* [href^="https"]
+   ^ means "starts with" */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* =========================================
+   PSEUDO-CLASSES
+   ========================================= */
+
+/* :hover
+   Applies when mouse is over the element */
+li:hover {
+    background-color: lightyellow;
+}
+
+/* :focus
+   Applies when input is selected/focused */
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* :nth-child()
+   Selects the second child */
+li:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+/* =========================================
+   PSEUDO-ELEMENTS
+   ========================================= */
+
+/* ::before
+   Adds content before the element */
+h2::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* ::after
+   Adds content after the element */
+h2::after {
+    content: " ✓";
+    color: green;
+}
+
+/* =========================================
+   COMBINATORS
+   ========================================= */
+
+/* Child combinator (>)
+   Selects ONLY direct children */
+.parent > p {
+    color: blue;
+}
+
+/* Adjacent sibling combinator (+)
+   Selects the first p immediately
+   after h3 */
+h3 + p {
+    color: purple;
+}
+
+/* General sibling combinator (~)
+   Selects ALL p elements after h3 */
+h3 ~ p {
+    font-style: italic;
+}
+
+/* Descendant combinator (space)
+   Selects all p elements anywhere
+   inside .description */
+.description p {
+    border-left: 4px solid gray;
+    padding-left: 10px;
+}
+
+/* General styling */
+
+input {
+    margin: 10px 0;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+}

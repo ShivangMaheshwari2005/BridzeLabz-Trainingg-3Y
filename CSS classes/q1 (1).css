@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Align boxes horizontally using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    min-height: 150px;
+    background-color: white;
+
+    /* Smooth transition for hover */
+    transition: border-color 0.3s;
+}
+
+/* Solid border */
+.solid {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+/* Dashed border */
+.dashed {
+    border: 5px dashed blue;
+    padding: 30px;
+}
+
+/* Double border */
+.double {
+    border: 8px double green;
+    padding: 15px;
+}
+
+/* Groove border */
+.groove {
+    border: 8px groove purple;
+    padding: 25px;
+}
+
+/* Rounded corners */
+.rounded {
+    border: 5px solid orange;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+/* Change border color on hover */
+.box:hover {
+    border-color: red;
+}

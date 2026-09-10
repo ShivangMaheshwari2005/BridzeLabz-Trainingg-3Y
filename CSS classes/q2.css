@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    /* Center everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+/* Box 1 - Pixel units */
+.box1 {
+    width: 200px;
+    height: 200px;
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Box 2 - Percentage and em */
+.box2 {
+    width: 25%;
+    height: 15em;
+
+    min-height: 150px;
+
+    background-color: lightgreen;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Box 3 - vh and max-width */
+.box3 {
+    width: 30%;
+    max-width: 300px;
+
+    height: 30vh;
+
+    background-color: lightcoral;
+
+    padding: 20px;
+
+    /* Handles extra content */
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box2,
+    .box3 {
+        width: 80%;
+    }
+}

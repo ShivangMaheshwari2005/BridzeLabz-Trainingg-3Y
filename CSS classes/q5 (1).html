@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+
+    <link rel="stylesheet" href="q5.css">
+</head>
+
+<body>
+
+    <h1>Advanced CSS Selectors</h1>
+
+    <div class="container">
+
+        <h2>Attribute Selectors</h2>
+
+        <input type="text" placeholder="Enter your name">
+
+        <a href="https://www.google.com">
+            HTTPS Link
+        </a>
+
+        <a href="http://example.com">
+            HTTP Link
+        </a>
+
+        <hr>
+
+        <h2>Pseudo-Classes</h2>
+
+        <ul>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+        </ul>
+
+        <hr>
+
+        <h2>Pseudo-Elements</h2>
+
+        <p>
+            The heading above uses ::before and ::after.
+        </p>
+
+        <hr>
+
+        <h2>Combinators</h2>
+
+        <!-- Child combinator -->
+        <div class="parent">
+
+            <p>Direct child paragraph.</p>
+
+            <div>
+                <p>Nested paragraph.</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- Sibling combinators -->
+        <h3>Sibling Example</h3>
+
+        <p>First paragraph after h3.</p>
+        <p>Second paragraph after h3.</p>
+        <p>Third paragraph after h3.</p>
+
+        <br>
+
+        <!-- Descendant combinator -->
+        <div class="description">
+
+            <p>Paragraph inside description.</p>
+
+            <div>
+                <p>Nested paragraph inside description.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
