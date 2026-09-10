@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Buttons</title>
+    <style>
+        button,
+        input[type="button"] {
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .primary {
+            background: #1500ff;
+        }
+
+        .danger {
+            background: #f44336;
+        }
+
+        .info {
+            background: #2196F3;
+        }
+
+        .warning {
+            background: #ff9800;
+        }
+
+        .success {
+            background-color: #28A745;
+        }
+
+        button:hover,
+        input[type="button"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <button class="primary">Primary</button>
+    <button class="danger">Danger</button>
+    <input type="button" value="Info" class="info">
+    <input type="button" value="Warning" class="warning">
+    <input type="button" value="Success" class="success">
+</body>
+</html>

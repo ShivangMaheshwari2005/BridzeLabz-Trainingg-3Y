@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Example</title>
+    <style>
+        div {
+            border: 1px solid;
+            width: 500px;
+            margin: 5px;
+            padding: 4px;
+            font-size: 25px;
+        }
+
+        .b-box {
+            box-sizing: border-box;
+        }
+
+        .c-box {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="c-box">
+        content-box = width(500px) + padding(4+4) + border
+        <br>
+        Sum of all 3 will be greater than 500px.
+        <br>
+        Layout may break if there is not enough space.
+    </div>
+
+    <div class="b-box">
+        border-box = width(500px) including padding and border
+        <br>
+        Sum of all 3 will be equal to 500px.
+        <br>
+        Layout is easier to control.
+    </div>
+</body>
+</html>

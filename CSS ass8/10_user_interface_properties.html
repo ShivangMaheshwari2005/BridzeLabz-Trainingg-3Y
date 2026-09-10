@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS User Interface Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            background: #28a745;
+            color: white;
+            border-radius: 6px;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        textarea {
+            resize: both;
+            width: 200px;
+            height: 100px;
+        }
+
+        input {
+            caret-color: crimson;
+            outline: none;
+            border: 2px solid #ccc;
+            padding: 6px;
+        }
+
+        input:focus {
+            border-color: dodgerblue;
+        }
+
+        .block {
+            user-select: none;
+            background: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS User Interface Properties Example</h3>
+
+    <input type="text" placeholder="Click or focus here">
+    <br><br>
+
+    <textarea>Try resizing me</textarea>
+    <br><br>
+
+    <button>Enabled Button</button>
+    <button disabled>Disabled Button</button>
+    <br><br>
+
+    <div class="block">Text selection is disabled here</div>
+</body>
+</html>

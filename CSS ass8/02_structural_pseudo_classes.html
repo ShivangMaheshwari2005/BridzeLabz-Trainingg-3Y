@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Pseudo-Class Example</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 200px;
+            font-family: Arial, sans-serif;
+        }
+
+        ul li {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #bbdefb;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #e3f2fd;
+        }
+
+        ul li:first-child {
+            background-color: #b9f6ca;
+            font-weight: bold;
+        }
+
+        ul li:last-child {
+            background-color: #ff8a80;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Structural Pseudo-Classes with List</h3>
+
+    <ul>
+        <li>Item 1 (first child)</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5 (last child)</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            margin: 15px;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        .brightness {
+            filter: brightness(150%);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(80%);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(10px 10px 5px gray);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Image Filters</h2>
+
+    <img src="https://picsum.photos/300/200" alt="Normal image">
+    <img class="blur" src="https://picsum.photos/300/200" alt="Blur effect">
+    <img class="brightness" src="https://picsum.photos/300/200" alt="Brightness effect">
+    <img class="grayscale" src="https://picsum.photos/300/200" alt="Grayscale effect">
+    <img class="sepia" src="https://picsum.photos/300/200" alt="Sepia effect">
+    <img class="drop-shadow" src="https://picsum.photos/300/200" alt="Drop shadow effect">
+</body>
+</html>
