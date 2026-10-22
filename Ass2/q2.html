@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q2 - String Manipulation Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 0 16px; }
+    pre { background: #f4f4f4; padding: 16px; border-radius: 8px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Q2. String Manipulation Report</h1>
+  <p>Output (also visible in the browser console):</p>
+  <pre id="output"></pre>
+
+  <script>
+    // Mirror console.log output onto the page
+    const out = document.getElementById("output");
+    const originalLog = console.log;
+    console.log = function (...args) {
+      originalLog.apply(console, args);
+      out.textContent += args.map(a => typeof a === "object" ? JSON.stringify(a) : a).join(" ") + "\n";
+    };
+  </script>
+  <script src="q2.js"></script>
+</body>
+</html>
