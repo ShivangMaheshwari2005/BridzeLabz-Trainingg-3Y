@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Assignment 4</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 32px auto; padding: 0 16px; background: #f5f6fa; color: #202124; }
+    h1 { margin-bottom: 8px; }
+    .hint { color: #555; }
+    .buttons { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 22px 0; }
+    button { padding: 12px; border: 0; border-radius: 8px; background: #253b80; color: white; cursor: pointer; font-size: 14px; }
+    button:hover { background: #18295b; }
+    #output { background: #111827; color: #e5e7eb; padding: 18px; min-height: 240px; border-radius: 8px; white-space: pre-wrap; font-family: Consolas, monospace; overflow-wrap: anywhere; }
+    .note { background: white; padding: 14px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Assignment 4</h1>
+  <p class="hint">Choose a question to run its separate JavaScript file. Output appears below and in the browser console.</p>
+  <div class="buttons">
+    <button onclick="runQuestion(1)">Question 1</button>
+    <button onclick="runQuestion(2)">Question 2</button>
+    <button onclick="runQuestion(3)">Question 3</button>
+    <button onclick="runQuestion(4)">Question 4</button>
+    <button onclick="runQuestion(5)">Question 5</button>
+    <button onclick="runQuestion(6)">Question 6</button>
+    <button onclick="runQuestion(7)">Question 7</button>
+    <button onclick="runQuestion(8)">Question 8</button>
+    <button onclick="runQuestion(9)">Question 9</button>
+  </div>
+  <div class="note"><strong>Output:</strong></div>
+  <pre id="output">Click a question button to run it.</pre>
+  <script>
+    function runQuestion(number) {
+      const output = document.getElementById("output");
+      output.textContent = "";
+      // Remove the previous question's script so its declarations don't conflict.
+      const oldScript = document.getElementById("question-script");
+      if (oldScript) oldScript.remove();
+      const script = document.createElement("script");
+      script.id = "question-script";
+      script.src = `q${number}.js`;
+      script.onerror = () => { output.textContent = "Could not load q" + number + ".js"; };
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
