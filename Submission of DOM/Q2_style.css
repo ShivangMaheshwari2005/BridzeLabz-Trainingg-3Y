@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f3f5f9; }
+.container { max-width: 600px; margin: 40px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 18px #00000012; }
+textarea { display: block; width: 100%; min-height: 160px; margin-top: 12px; padding: 12px; font: inherit; resize: vertical; }
+#counter { font-weight: bold; color: #25833b; }
+#counter.warning { color: #d49a00; }
+#counter.danger { color: #c62828; }
+button { padding: 10px 18px; border: 0; border-radius: 6px; background: #2457c5; color: white; cursor: pointer; }

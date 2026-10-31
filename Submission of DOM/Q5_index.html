@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Image Gallery</h1>
+    <p>Click any image to preview it.</p>
+    <div id="gallery" class="gallery">
+      <img src="https://picsum.photos/id/1015/500/350" alt="Mountain landscape">
+      <img src="https://picsum.photos/id/1016/500/350" alt="Forest landscape">
+      <img src="https://picsum.photos/id/1025/500/350" alt="Dog portrait">
+      <img src="https://picsum.photos/id/1035/500/350" alt="Coastal landscape">
+      <img src="https://picsum.photos/id/1043/500/350" alt="Nature scene">
+      <img src="https://picsum.photos/id/1069/500/350" alt="Ocean view">
+    </div>
+  </main>
+  <div id="image-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-modal" type="button" aria-label="Close preview">×</button>
+      <img id="modal-image" src="" alt="Large preview">
+    </div>
+  </div>
+</body>
+</html>

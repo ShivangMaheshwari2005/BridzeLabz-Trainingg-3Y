@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f3f5f9; }
+.container { max-width: 520px; margin: 40px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 18px #00000012; }
+.form-step { display: none; }
+.form-step.active { display: block; }
+label { display: block; margin: 14px 0 7px; font-weight: bold; }
+input { width: 100%; padding: 11px; border: 1px solid #bbb; border-radius: 6px; font-size: 16px; }
+.error { min-height: 18px; color: #c62828; font-size: 13px; }
+.actions { display: flex; justify-content: space-between; margin-top: 20px; }
+button { padding: 10px 18px; border: 0; border-radius: 6px; background: #2457c5; color: white; cursor: pointer; }
+button:disabled { background: #aaa; cursor: not-allowed; }

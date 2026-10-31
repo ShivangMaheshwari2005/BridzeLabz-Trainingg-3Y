@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f3f5f9; }
+.container { max-width: 800px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 18px #00000012; }
+input { width: 100%; padding: 11px; margin: 12px 0 20px; border: 1px solid #bbb; border-radius: 6px; font-size: 16px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #ddd; }
+th { background: #2457c5; color: white; }
+#no-results { color: #c62828; font-weight: bold; }

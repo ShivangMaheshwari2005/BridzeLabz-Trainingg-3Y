@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Directory</h1>
+    <label for="search-input">Search by name, branch, or CGPA</label>
+    <input id="search-input" type="search" placeholder="Start typing...">
+    <table>
+      <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+      <tbody id="student-rows">
+        <tr><td>Aarav Sharma</td><td>CSE</td><td>8.4</td></tr>
+        <tr><td>Diya Verma</td><td>AI & DS</td><td>9.1</td></tr>
+        <tr><td>Rohan Singh</td><td>ECE</td><td>7.6</td></tr>
+        <tr><td>Meera Gupta</td><td>CSE</td><td>8.9</td></tr>
+        <tr><td>Kabir Jain</td><td>Mechanical</td><td>7.8</td></tr>
+        <tr><td>Ananya Das</td><td>AI & DS</td><td>8.7</td></tr>
+      </tbody>
+    </table>
+    <p id="no-results" hidden>No results found</p>
+  </main>
+</body>
+</html>

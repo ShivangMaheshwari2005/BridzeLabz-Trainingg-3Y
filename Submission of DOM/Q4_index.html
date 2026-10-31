@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="light">
+  <main class="container">
+    <h1>Theme Switcher</h1>
+    <p>Choose a theme. The selected theme is stored in the body's data-theme attribute.</p>
+    <div class="buttons">
+      <button data-theme-choice="light">Light</button>
+      <button data-theme-choice="dark">Dark</button>
+      <button data-theme-choice="blue">Blue</button>
+    </div>
+    <p id="current-theme">Current theme: light</p>
+  </main>
+</body>
+</html>

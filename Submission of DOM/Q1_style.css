@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f3f5f9; color: #222; }
+.container { max-width: 650px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 18px #00000012; }
+h1 { margin-top: 0; }
+form { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 11px; border: 1px solid #bbb; border-radius: 6px; font-size: 16px; }
+button { padding: 10px 14px; border: 0; border-radius: 6px; background: #2457c5; color: white; cursor: pointer; }
+button:hover { opacity: .88; }
+ul { padding: 0; list-style: none; }
+li { display: flex; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid #e5e5e5; }
+.product-name { flex: 1; overflow-wrap: anywhere; }
+.edit-input { flex: 1; padding: 8px; }
+.delete-button { background: #c62828; }
+#message { min-height: 20px; color: #c62828; }
+small { color: #666; }
