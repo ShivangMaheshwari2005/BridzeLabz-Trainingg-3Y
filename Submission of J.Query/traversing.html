@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Traversing</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/traversing.js" defer></script>
+</head>
+<body>
+  <h1>jQuery Traversing</h1>
+  <nav>
+    <a href="index.html">Introduction</a><a href="selectors.html">Selectors</a>
+    <a href="actions.html">Actions</a><a href="content-manipulation.html">Content</a>
+    <a href="structure-manipulation.html">Structure</a><a href="attribute-css.html">Attributes/CSS</a>
+    <a href="events.html">Events</a><a href="effects.html">Effects</a>
+    <a href="traversing.html">Traversing</a><a href="versions.html">Versions</a>
+  </nav>
+
+<div class="demo">
+  <h2>Ancestors</h2><div id="ancestorDiv"><ul><li><span id="item">Click this text</span></li></ul></div>
+  <h2>Descendants</h2><div id="container"><p>Paragraph 1</p><p class="special">Paragraph 2</p><p>Paragraph 3</p></div>
+  <h2>Siblings</h2><ul><li>One</li><li id="mid">Two</li><li>Three</li><li>Four</li></ul>
+  <h2>Filtering</h2><p class="filterPara">Filter paragraph 1</p><p class="filterPara highlight">Filter paragraph 2</p><p class="filterPara">Filter paragraph 3</p>
+  <p class="result">Click the ancestor text to see parent/parents methods.</p>
+</div>
+
+</body>
+</html>

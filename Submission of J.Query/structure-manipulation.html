@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structure Manipulation</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/structure-manipulation.js" defer></script>
+</head>
+<body>
+  <h1>Structure Manipulation</h1>
+  <nav>
+    <a href="index.html">Introduction</a><a href="selectors.html">Selectors</a>
+    <a href="actions.html">Actions</a><a href="content-manipulation.html">Content</a>
+    <a href="structure-manipulation.html">Structure</a><a href="attribute-css.html">Attributes/CSS</a>
+    <a href="events.html">Events</a><a href="effects.html">Effects</a>
+    <a href="traversing.html">Traversing</a><a href="versions.html">Versions</a>
+  </nav>
+
+<div id="box">
+  <ul id="studentList"><li>Aditya</li><li>Deepak</li><li>Riya</li></ul>
+</div>
+<div class="button-row">
+  <button id="btnPrepend">Add at start</button><button id="btnAppend">Add at end</button>
+  <button id="btnBefore">Add before box</button><button id="btnAfter">Add after box</button>
+  <button id="btnEmpty" class="secondary">Empty list</button><button id="btnRemove" class="secondary">Remove box</button>
+</div>
+<p class="result" id="result"></p>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple jQuery Versions</title><link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>var jq1 = jQuery.noConflict(true);</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>var jq3 = jQuery.noConflict(true);</script>
+<script src="js/versions.js" defer></script>
+</head><body>
+<h1>Handling Different jQuery Versions</h1>
+<nav><a href="index.html">Introduction</a><a href="selectors.html">Selectors</a><a href="events.html">Events</a></nav>
+<div class="demo">
+  <p>This page keeps two jQuery versions in separate variables using <code>noConflict(true)</code>.</p>
+  <div id="box1">Box 1 — jQuery 1.x</div><div id="box2">Box 2 — jQuery 3.x</div>
+  <button id="btn1">Change with jQuery 1.x</button><button id="btn2">Change with jQuery 3.x</button>
+  <p id="versionResult" class="result"></p>
+</div></body></html>
